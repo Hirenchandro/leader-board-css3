@@ -85,12 +85,19 @@ margin-left: 16px;
 /* -------------
 courses styles
 ----------------------  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
 .courses .course-banner img{
     width: 224px;
     height: 104px;
 }
 .course-info{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .fa-star{
     font-size: 12px;
@@ -100,4 +107,10 @@ courses styles
 }
 .fa-star.empty{
     color: #AEAEAE;
+}
+.course-duration{
+color: #FF4A60;
+background-color: #ff4a5f77;
+border-radius: 15px;
+   
 }
